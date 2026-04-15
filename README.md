@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# Internet Banking
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Internet Banking (IB)
+Internet Banking for bank customers, a web suite developed in React framework
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+View all bank accounts
+Transfer funds between accounts
+Real‑time balance updates
+Validation for:
+Amount > 0
+Max limit (25,000 AED)
+Cannot transfer to same account
+Sufficient balance
+Transaction history (latest 10)
+Clean UI with AED (د.إ) currency formatting
+Responsive layout
 
-## React Compiler
+## Tech Stack
+React 19.2.4
+TypeScript 6.0.2
+Vite  8.0.4
+Axios 1.15.0
+Node v22.20.0
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Authentication & Authorization
+Authentication and Authorization using JWT
 
-## Expanding the ESLint configuration
+## Installation
+git clone https://github.com/MaheshMudike/banking-frontend.git
+cd frontend-app  banking-ui
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Build
+Run `npn run dev` to build the project
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Author 
+Mahesh Mudike
