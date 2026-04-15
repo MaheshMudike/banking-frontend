@@ -14,7 +14,6 @@ Max limit (25,000 AED)
 Cannot transfer to same account
 Sufficient balance
 Transaction history (latest 10)
-Clean UI with AED (د.إ) currency formatting
 Responsive layout
 
 ## Tech Stack
