@@ -1,6 +1,4 @@
-/* ================================
-   GLOBAL PAGE LAYOUT
-================================= */
+/* Global Layout */
 
 body {
   margin: 0;
@@ -16,43 +14,34 @@ body {
   box-sizing: border-box;
 }
 
-
-/* ================================
-   UNIVERSAL CARD STYLE
-   (Used for login, dashboard, transfer, transactions)
-================================= */
-
+/* Global card style */
 .card {
   background: white;
   padding: 25px;
   border-radius: 12px;
   margin: 40px auto;
-  width: 95%;                 /* wider card */
-  max-width: 600px;           /* perfect size for desktop */
+  width: 95%;                
+  max-width: 600px;         
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   box-sizing: border-box;
 }
 
 
-/* ================================
-   INPUTS + SELECTS (GLOBAL)
-================================= */
+/* Input Select fields */
 
 .input-select,
 .login-input {
-  width: 100%;                /* ALWAYS fit inside card */
+  width: 100%;             
   padding: 12px;
   margin-top: 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 16px;
-  box-sizing: border-box;     /* prevents overflow */
+  box-sizing: border-box; 
 }
 
 
-/* ================================
-   BUTTONS (GLOBAL)
-================================= */
+/* Buttons */
 
 .button-primary,
 .login-button {
@@ -73,9 +62,7 @@ body {
 }
 
 
-/* ================================
-   LOGIN PAGE
-================================= */
+/* Login Page */
 
 .login-title {
   margin-bottom: 20px;
@@ -92,9 +79,7 @@ body {
 }
 
 
-/* ================================
-   DASHBOARD ACCOUNT CARDS
-================================= */
+/* Dashboard Account Cards */
 
 .account-card {
   background: white;
@@ -121,10 +106,7 @@ body {
 }
 
 
-/* ================================
-   TRANSACTION CARDS
-================================= */
-
+/* Transaction Cards */
 .transaction-card {
   background: white;
   padding: 15px;
@@ -138,10 +120,7 @@ body {
 }
 
 
-/* ================================
-   TRANSFER PAGE
-================================= */
-
+/* Transfer Page */
 .transfer-box {
   background: white;
   padding: 25px;
