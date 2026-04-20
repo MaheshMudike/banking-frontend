@@ -17,7 +17,7 @@ export default function Navbar() {
         <Link to="/transfer">Transfer</Link>
       </div>
 
-      <button onClick={logout}>Logout</button>
+      <button onClick={logout} >Logout</button>
     </div>
   );
 }

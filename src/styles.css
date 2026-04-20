@@ -192,4 +192,33 @@ body {
   font-weight: 600;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-primary-light {
+  background-color: #cce5ff;
+  color: #004085;
+  padding: 8px 14px;
+  border: 1px solid #b8daff;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+
 

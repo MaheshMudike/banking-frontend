@@ -31,7 +31,20 @@ export default function Dashboard() {
                 </Link>
               </div>
           ))}
-          <button onClick={logout}>Logout</button>
+         <div style={{ display: "flex", gap: "12px", marginTop: "20px" }}>
+            <Link to="/beneficiaries">
+              <button
+                className="button-primary-light">
+                Manage Beneficiaries
+              </button>
+            </Link>
+
+            <button
+              onClick={logout}
+              className="button-primary-light">
+              Logout
+            </button>
+          </div>
       </div>
     </>
   );

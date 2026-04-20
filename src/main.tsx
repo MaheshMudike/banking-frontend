@@ -9,6 +9,8 @@ import "./index.css";
 import ProtectedRoute from "./router/ProtectedRoute";
 import Transactions from "./pages/Transactions";
 import "./styles.css";
+import Beneficiaries from "./pages/Beneficiaries";
+import AddBeneficiary from "./pages/AddBeneficiary";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -43,6 +45,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
               </ProtectedRoute>
             }
           />
+          <Route path="/beneficiaries" element={<Beneficiaries />} />
+          <Route path="/beneficiaries/add" element={<AddBeneficiary />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
